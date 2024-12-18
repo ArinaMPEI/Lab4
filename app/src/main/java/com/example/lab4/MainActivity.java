@@ -120,6 +120,7 @@ public class MainActivity extends AppCompatActivity {
         }
 
         List<Player> shuffledPlayers = new ArrayList<>(selectedPlayers);
+        //Collections.shuffle() случайным образом изменяет порядок элементов в переданном ему списке
         Collections.shuffle(shuffledPlayers); // Перемешиваем игроков
 
         List<Player> redTeam = new ArrayList<>();

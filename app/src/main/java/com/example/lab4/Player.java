@@ -36,7 +36,7 @@ public class Player implements Parcelable {
     public void setSelected(boolean selected) {
         isSelected = selected;
     }
-
+    // Используется системой Android, чтобы преобразовать объект Player в последовательность байтов для передачи.
     @Override
     public void writeToParcel(Parcel dest, int flags) {
         dest.writeString(name); // Записываем имя игрока в Parcel
